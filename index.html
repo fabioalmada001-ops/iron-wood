@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Iron Wood: muebles industriales de metal y madera, catálogo y diseños personalizados.">
+  <meta name="theme-color" content="#f4efe7">
+  <title>Iron Wood | Muebles industriales a medida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Iron Wood, inicio">
+      <span class="brand-mark">IW</span>
+      <span>
+        <strong>IRON WOOD</strong>
+        <small>Metal + madera</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#personalizar">Personalizar</a>
+      <a href="#como-trabajamos">Cómo trabajamos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a class="nav-button" href="#contacto">Consultar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">Muebles industriales hechos por pedido</p>
+        <h1>Diseño fuerte.<br>Calidez real.</h1>
+        <p>
+          Creamos muebles de metal y madera para hogares, oficinas y negocios.
+          Elegí un modelo del catálogo o diseñá una pieza adaptada a tu espacio.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#catalogo">Explorar catálogo</a>
+          <a class="button secondary" href="#personalizar">Diseñar mi mueble</a>
+        </div>
+        <div class="hero-points">
+          <span>Medidas personalizadas</span>
+          <span>Colores y maderas a elección</span>
+          <span>Fabricación por pedido</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="nosotros">
+      <div class="section-heading compact">
+        <p class="eyebrow">La propuesta</p>
+        <h2>Muebles con identidad industrial y pensados para durar.</h2>
+      </div>
+      <div class="intro-text">
+        <p>
+          Iron Wood nace para ofrecer muebles modernos, funcionales y personalizables.
+          La estructura metálica aporta resistencia; la madera suma calidez y carácter.
+        </p>
+        <p>
+          Esta página es una primera prueba del proyecto. El catálogo, los textos,
+          los precios y las funciones seguirán evolucionando a medida que definamos
+          los productos reales de la marca.
+        </p>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalogo">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">Catálogo de prueba</p>
+          <h2>Primeros modelos</h2>
+        </div>
+        <p>
+          Las imágenes son referencias de estilo. Cada producto podrá adaptarse en medidas,
+          terminaciones, distribución y accesorios.
+        </p>
+      </div>
+
+      <div class="catalog-toolbar">
+        <div class="filters" role="group" aria-label="Filtrar catálogo">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="oficina">Oficina</button>
+          <button class="filter" data-filter="living">Living</button>
+          <button class="filter" data-filter="comedor">Comedor</button>
+          <button class="filter" data-filter="dormitorio">Dormitorio</button>
+        </div>
+        <label class="search-box">
+          <span>Buscar</span>
+          <input id="catalogSearch" type="search" placeholder="Mesa, rack, biblioteca...">
+        </label>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="section mood-section">
+      <div class="mood-image">
+        <img src="assets/inspiracion-proyectos.jpg" alt="Referencias de muebles industriales especiales">
+      </div>
+      <div class="mood-copy">
+        <p class="eyebrow light">Más que un producto</p>
+        <h2>Diseñamos para el espacio y para el uso.</h2>
+        <p>
+          Un mueble puede resolver guardado, ordenar un ambiente, mejorar una oficina
+          o convertirse en el punto central de un negocio.
+        </p>
+        <a class="text-link light-link" href="#personalizar">Comenzar un diseño →</a>
+      </div>
+    </section>
+
+    <section class="section custom-section" id="personalizar">
+      <div class="custom-intro">
+        <p class="eyebrow">Personalización asistida</p>
+        <h2>Contanos cómo querés tu mueble.</h2>
+        <p>
+          Completá el formulario y el asistente generará una propuesta inicial.
+          En esta versión de prueba funciona dentro del navegador. Más adelante
+          podrá conectarse con una inteligencia artificial real para crear renders,
+          alternativas y estimaciones.
+        </p>
+
+        <div class="feature-list">
+          <article>
+            <strong>01</strong>
+            <span>Elegís tipo, uso y medidas.</span>
+          </article>
+          <article>
+            <strong>02</strong>
+            <span>Definís metal, madera y accesorios.</span>
+          </article>
+          <article>
+            <strong>03</strong>
+            <span>Recibís una propuesta preliminar.</span>
+          </article>
+        </div>
+      </div>
+
+      <form class="designer-card" id="designerForm">
+        <div class="form-title">
+          <span>Asistente de diseño · Demo</span>
+          <h3>Configurá tu idea</h3>
+        </div>
+
+        <label>
+          Tipo de mueble
+          <select id="furnitureType" required>
+            <option value="escritorio">Escritorio</option>
+            <option value="mesa">Mesa de comedor</option>
+            <option value="rack">Rack para TV</option>
+            <option value="biblioteca">Biblioteca</option>
+            <option value="mesa-ratona">Mesa ratona</option>
+            <option value="mesa-luz">Mesa de luz</option>
+            <option value="otro">Otro diseño</option>
+          </select>
+        </label>
+
+        <label>
+          ¿Dónde se va a usar?
+          <select id="roomType" required>
+            <option>Living</option>
+            <option>Comedor</option>
+            <option>Oficina / home office</option>
+            <option>Dormitorio</option>
+            <option>Negocio</option>
+            <option>Galería o espacio semicubierto</option>
+          </select>
+        </label>
+
+        <div class="three-columns">
+          <label>Largo (cm)<input id="length" type="number" min="20" max="500" value="160" required></label>
+          <label>Profundidad (cm)<input id="depth" type="number" min="20" max="250" value="60" required></label>
+          <label>Alto (cm)<input id="height" type="number" min="20" max="300" value="75" required></label>
+        </div>
+
+        <div class="two-columns">
+          <label>
+            Color del metal
+            <select id="metalColor">
+              <option>Negro mate</option>
+              <option>Grafito</option>
+              <option>Blanco</option>
+              <option>Bronce oscuro</option>
+              <option>Color personalizado</option>
+            </select>
+          </label>
+          <label>
+            Tono de madera
+            <select id="woodTone">
+              <option>Natural clara</option>
+              <option>Miel</option>
+              <option>Nogal</option>
+              <option>Oscura</option>
+              <option>Blanqueada</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>Opciones adicionales</legend>
+          <div class="checkbox-grid">
+            <label><input type="checkbox" value="cajones"> Cajones</label>
+            <label><input type="checkbox" value="puertas"> Puertas</label>
+            <label><input type="checkbox" value="estantes"> Estantes</label>
+            <label><input type="checkbox" value="ruedas"> Ruedas</label>
+            <label><input type="checkbox" value="pasacables"> Pasacables</label>
+            <label><input type="checkbox" value="niveladores"> Niveladores</label>
+          </div>
+        </fieldset>
+
+        <label>
+          Contanos algo más
+          <textarea id="extraDetails" rows="4" placeholder="Ejemplo: quiero espacio para dos monitores, una impresora y guardado para documentos."></textarea>
+        </label>
+
+        <label>
+          Presupuesto orientativo
+          <select id="budget">
+            <option>No definido todavía</option>
+            <option>Busco una opción económica</option>
+            <option>Busco equilibrio entre precio y terminación</option>
+            <option>Quiero una terminación premium</option>
+          </select>
+        </label>
+
+        <button class="button primary full" type="submit">Generar propuesta</button>
+      </form>
+
+      <div class="ai-result" id="aiResult" hidden>
+        <div>
+          <p class="eyebrow">Propuesta preliminar</p>
+          <h3 id="proposalTitle"></h3>
+        </div>
+        <p id="proposalText"></p>
+        <div class="proposal-specs" id="proposalSpecs"></div>
+        <div class="proposal-actions">
+          <button class="button dark" id="copyProposal" type="button">Copiar propuesta</button>
+          <a class="button outline-dark" id="whatsappProposal" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        </div>
+        <small>
+          Esta propuesta es orientativa. La viabilidad estructural, los materiales,
+          el precio y el plazo deberán confirmarse antes de fabricar.
+        </small>
+      </div>
+    </section>
+
+    <section class="section process-section" id="como-trabajamos">
+      <div class="section-heading">
+        <p class="eyebrow">Proceso</p>
+        <h2>De la idea al mueble terminado</h2>
+      </div>
+      <div class="process-grid">
+        <article><span>01</span><h3>Consulta</h3><p>Recibimos medidas, referencias, uso y preferencias.</p></article>
+        <article><span>02</span><h3>Diseño</h3><p>Definimos forma, materiales, distribución y terminaciones.</p></article>
+        <article><span>03</span><h3>Presupuesto</h3><p>Presentamos precio, alcance y tiempo estimado.</p></article>
+        <article><span>04</span><h3>Fabricación</h3><p>Corte, soldadura, pintura, madera, armado y control.</p></article>
+        <article><span>05</span><h3>Entrega</h3><p>Coordinamos retiro, envío o instalación.</p></article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div>
+        <p class="eyebrow light">Primer contacto</p>
+        <h2>Mandanos una foto, una medida o una idea.</h2>
+        <p>
+          Podemos partir de una referencia del catálogo o desarrollar un proyecto especial.
+        </p>
+      </div>
+      <div class="contact-actions">
+        <a class="button light-button" href="#personalizar">Completar diseño</a>
+        <a class="button transparent-button" href="https://wa.me/5490000000000" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand">
+      <span class="brand-mark">IW</span>
+      <span>
+        <strong>IRON WOOD</strong>
+        <small>Muebles industriales a medida</small>
+      </span>
+    </div>
+    <p>Prueba de sitio web · <span id="currentYear"></span></p>
+  </footer>
+
+  <dialog class="product-dialog" id="productDialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Cerrar">×</button>
+    <img id="dialogImage" src="" alt="">
+    <div class="dialog-content">
+      <span class="product-code" id="dialogCode"></span>
+      <h3 id="dialogName"></h3>
+      <p id="dialogDescription"></p>
+      <div class="dialog-details" id="dialogDetails"></div>
+      <button class="button primary" id="useProduct" type="button">Personalizar este modelo</button>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
